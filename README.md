@@ -40,12 +40,19 @@ The `.bash_aliases` file shipped with this repo includes some shorthands:
 - *cl*: `clear`
 - *+*: `sudo`
 
+The ones marked with `*`, can be executed as root with the *+* prefix
+
+For Example: `$ +py` => `$ sudo python3`
+
+
 ## MKPR
 
 It also includes a bash function called `mkpr`, which is a tool to create project directories very fast.
 
+For Example, with:
+
 ```$ mkpr projectName```
 
-The function will:
+the function will:
 - create a directory called "projectName"
-- creates a Git Repository in it
+- create a Git Repository in it
