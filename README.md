@@ -71,4 +71,4 @@ the function will:
 - create a Python Environment in it
 - activate the python environment
 
-### Important: this creates a Python2 venv. If you want to use Python3 instead, just use mkpy3 :)
+#### Important: this creates a Python2 venv. If you want to use Python3 instead, just use mkpy3 :)
