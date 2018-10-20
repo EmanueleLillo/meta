@@ -45,7 +45,7 @@ The ones marked with `*`, can be executed as root with the *+* prefix
 For Example: `$ +py` => `$ sudo python3`
 
 
-## MKPR
+### MKPR
 
 It also includes a bash function called `mkpr`, which is a tool to create project directories very fast.
 
