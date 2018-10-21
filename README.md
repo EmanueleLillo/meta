@@ -104,4 +104,4 @@ the function will:
 A **motd** (**m**essage **o**f **t**he **d**ay) is a message displayed everytime you log on a terminal.
 
 To set a motd, edit the `~/.motd` file.
-The default file will show a welcome message with the username next to it.
+The default file will show a welcome message with your username next to it.
