@@ -25,7 +25,7 @@ cd meta
 And graft all the necessary files with
 
 ```bash
-./dump.sh
+./src/dump.sh
 ```
 
 ## Usage
