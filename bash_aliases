@@ -6,6 +6,21 @@ mkpr() {
 	cd ..;
 }
 
+mkpy() {
+	local dir=$1;
+	mkdir $dir;
+	cd $dir;
+	python -m venv env/;
+	source env/bin/activate;
+}
+
+mkpy3() {
+	local dir=$1;
+	mkdir $dir;
+	cd $dir;
+	python3 -m venv env/;
+	source env/bin/activate;
+}
 
 
 alias ll='ls -alF'

@@ -1,4 +1,4 @@
-# META
+# Meta
 
 Simple user boiler-template for bash environments.
 
@@ -56,3 +56,19 @@ For Example, with:
 the function will:
 - create a directory called "projectName"
 - create a Git Repository in it
+
+
+### MKPY
+
+It also includes a bash function called `mkpy`, which is a tool to create python environments very fast.
+
+For Example, with:
+
+```$ mkpy projectName```
+
+the function will:
+- create a directory called "projectName"
+- create a Python Environment in it
+- activate the python environment
+
+#### Important: this creates a Python2 venv. If you want to use Python3 instead, just use mkpy3 :)
