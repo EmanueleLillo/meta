@@ -159,4 +159,13 @@ function parse_git_dirty {
 	fi
 }
 
+# Executing MOTD
+
+if [ -f ~/.motd ]; then
+    . ~/.motd
+fi
+
+
+# Custom colors
+
 export PS1="\[\e[32;1m\]\u\[\e[m\]\[\e[32;1m\]@\[\e[m\]\[\e[32;1m\]\h\[\e[m\]:\[\e[34;1m\]\w\[\e[m\]\[\e[31;1m\]\`parse_git_branch\`\[\e[m\]\[\e[34;1m\]\\$\[\e[m\] "

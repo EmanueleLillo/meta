@@ -10,6 +10,7 @@ mkpy() {
 	local dir=$1;
 	mkdir $dir;
 	cd $dir;
+	git init;
 	python -m venv env/;
 	source env/bin/activate;
 }
@@ -18,6 +19,7 @@ mkpy3() {
 	local dir=$1;
 	mkdir $dir;
 	cd $dir;
+	git init;
 	python3 -m venv env/;
 	source env/bin/activate;
 }

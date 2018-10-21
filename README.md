@@ -6,15 +6,21 @@ Simple user boiler-template for bash environments.
 
 Clone this repository with
 
-```$ git clone https://github.com/EmanueleLillo/meta```
+```bash
+git clone https://github.com/EmanueleLillo/meta
+```
 
 Then move into the new directory
 
-```$ cd meta```
+```bash
+cd meta
+```
 
 And graft all the necessary files with
 
-```$ ./dump.sh```
+```bash
+./dump.sh
+```
 
 ## Usage
 
@@ -40,35 +46,62 @@ The `.bash_aliases` file shipped with this repo includes some shorthands:
 - **cl**: `clear`
 - **+**: `sudo`
 
-The ones marked with `*`, can be executed as root with the *+* prefix
+The ones marked with `*`, can be executed as root with the **+** prefix
 
-For Example: `$ +py` => `$ sudo python3`
+For Example:
+```bash
++wem file.py
+```
+will be translated with
+
+```bash
+sudo emacs file.py
+```
+
+### Bash Functions
+
+This repository also includes some handy bash functions, like:
+
+- [MKPR](#mkpr)
+- [MKPY](#mkpy)
 
 
-### MKPR
+#### MKPR
 
-It also includes a bash function called `mkpr`, which is a tool to create project directories very fast.
+This function will create a general-purpose project directory.
 
 For Example, with:
 
-```$ mkpr projectName```
+```bash
+mkpr projectName
+```
 
 the function will:
 - create a directory called "projectName"
 - create a Git Repository in it
 
 
-### MKPY
+#### MKPY
 
-It also includes a bash function called `mkpy`, which is a tool to create python environments very fast.
+This function will create a Python-based project directory.
 
 For Example, with:
 
-```$ mkpy projectName```
+```bash
+mkpy projectName
+```
 
 the function will:
 - create a directory called "projectName"
+- create a Git repository in it
 - create a Python Environment in it
-- activate the python environment
+- activate the Environment
 
-#### Important: this creates a Python2 venv. If you want to use Python3 instead, just use mkpy3 :)
+##### Important: this creates a Python2 venv. If you want to use Python3 instead, just use mkpy3 :)
+
+### MOTD
+
+A **motd** (**m**essage **o**f **t**he **d**ay) is a message displayed everytime you log on a terminal.
+
+To set a motd, edit the `~/.motd` file.
+The default file will show a welcome message with the username next to it.
