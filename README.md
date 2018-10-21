@@ -118,6 +118,6 @@ You can Pull Request me everytime you want, I'll check your sumbissions as soon 
 
 
 #### TODOs
-     1) [ ] MKND: Bash Function - Create a NodeJS project
-     2) [ ] MKDK: Bash Function - Create a project with a Dockerfile / docker-compose file
-     3) [ ] MKFL: Bash Function - Create a Flask App
+- [ ] MKND: Bash Function - Create a NodeJS project
+- [ ] MKDK: Bash Function - Create a project with a Dockerfile / docker-compose file
+- [ ] MKFL: Bash Function - Create a Flask App
