@@ -22,25 +22,25 @@ And graft all the necessary files with
 
 The `.bash_aliases` file shipped with this repo includes some shorthands:
 
-- _g_: `git` *
-- _gi_: `git init` *
-- _ga_: `git add` *
-- _gcl_: `git clone`
-- _gcm_: `git commit` *
-- _gp_: `git push` *
-- _code_: `vscode` *
-- _kd_: `vscode .` *
-- _py_: `python3` *
-- _js_: `node` *
-- _nn_: `nano` *
-- _em_: `emacs --no-window` *
-- _wem_: `emacs` *
-- _lgt_: `exit`
-- _lgn_: `sudo login`
-- _cl_: `clear`
-- _+_: `sudo`
+- **g**: `git` *
+- **gi**: `git init` *
+- **ga**: `git add` *
+- **gcl**: `git clone`
+- **gcm**: `git commit` *
+- **gp**: `git push` *
+- **code**: `vscode` *
+- **kd**: `vscode .` *
+- **py**: `python3` *
+- **js**: `node` *
+- **nn**: `nano` *
+- **em**: `emacs --no-window` *
+- **wem**: `emacs` *
+- **lgt**: `exit`
+- **lgn**: `sudo login`
+- **cl**: `clear`
+- **+**: `sudo`
 
-The ones marked with _*_, can be executed as root with the `+` prefix
+The ones marked with `*`, can be executed as root with the *+* prefix
 
 For Example: `$ +py` => `$ sudo python3`
 
