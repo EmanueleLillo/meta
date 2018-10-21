@@ -2,6 +2,11 @@
 
 Simple user boiler-template for bash environments.
 
+## Summary
+- [Installing](#install)
+- [Using It](#usage)
+- [Collaborating](#collaborations)
+
 ## Install
 
 Clone this repository with
@@ -105,3 +110,14 @@ A **motd** (**m**essage **o**f **t**he **d**ay) is a message displayed everytime
 
 To set a motd, edit the `~/.motd` file.
 The default file will show a welcome message with your username next to it.
+
+
+### Collaborations
+
+You can Pull Request me everytime you want, I'll check your sumbissions as soon as I can.
+
+
+#### TODOs
+     1) [ ] MKND: Bash Function - Create a NodeJS project
+     2) [ ] MKDK: Bash Function - Create a project with a Dockerfile / docker-compose file
+     3) [ ] MKFL: Bash Function - Create a Flask App
