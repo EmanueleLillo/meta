@@ -6,6 +6,7 @@ Simple user boiler-template for bash environments.
 - [Installing](#install)
 - [Using It](#usage)
 - [Collaborating](#collaborations)
+- [TODO](#todos)
 
 ## Install
 
@@ -117,7 +118,7 @@ The default file will show a welcome message with your username next to it.
 You can Pull Request me everytime you want, I'll check your sumbissions as soon as I can.
 
 
-#### TODOs
-- [ ] MKND: Bash Function - Create a NodeJS project
-- [ ] MKDK: Bash Function - Create a project with a Dockerfile / docker-compose file
-- [ ] MKFL: Bash Function - Create a Flask App
+### TODOs
+- [ ] **MKND**: Bash Function - Create a NodeJS project
+- [ ] **MKDK**: Bash Function - Create a project with a Dockerfile / docker-compose file
+- [ ] **MKFL**: Bash Function - Create a Flask App
