@@ -1,3 +1,25 @@
+export bold=$(tput bold);
+export white=$(tput setaf 250);
+export red=$(tput setaf 124);
+export blue=$(tput setaf 68);
+export lime=$(tput setaf 40);
+export norm=$(tput sgr0);
+
+# Functions
+
+meta() {
+       curl -s "https://api.github.com/repos/EmanueleLillo/meta/commits" | \
+       python -c "import sys, json; \
+       commit = json.load(sys.stdin)[0]['commit']; \
+       author = commit['author']['name']; \
+       date = commit['author']['date']; \
+       message = commit['message']; \
+       print '${white}${bold}META${norm}${white}: Simple and Open Source user boiler-template for bash environments.${norm}'; \
+       print '  ${blue}${bold}Github Page: https://github.com/EmanueleLillo/meta${norm}'; \
+       print '  ${lime}${bold}Last update by ${red}{0}${lime} {1}.${norm}'.format(author, date.replace('T', ' at ').replace('Z', '')); \
+       print '    ${bold}${white}Commit:${blue} {0}${norm}'.format(message)"
+}
+
 mkpr() {
 	local dir=$1;
 	mkdir $dir;
@@ -24,6 +46,7 @@ mkpy3() {
 	source env/bin/activate;
 }
 
+# Aliases
 
 alias ll='ls -alF'
 alias la='ls -A'
