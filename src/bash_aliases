@@ -25,7 +25,6 @@ mkpr() {
 	mkdir $dir;
 	cd $dir;
 	git init;
-	cd ..;
 }
 
 mkpy() {
@@ -46,6 +45,22 @@ mkpy3() {
 	source env/bin/activate;
 }
 
+mkfl () {
+	local dir=$1;
+	mkdir $dir;
+	cd $dir;
+	git init;
+	python3 -m venv env/;
+	source env/bin/activate;
+	echo "flask" > requirements.txt;
+	pip install -r requirements.txt;
+	mkdir src;
+	cd src/;
+	printf 'from application import app\n\nif __name__ == "__main__":\n    app.run(port=8080, debug=True)\n' > run.py;
+	mkdir application/;
+	printf 'from flask import Flask\n\napp = Flask(__name__)\n\nfrom .routes import *\n' > application/__init__.py;
+	printf 'from . import app\n\n@app.route("/")\ndef index ():\n    return "Working"\n' > application/routes.py;
+}
 # Aliases
 
 alias ll='ls -alF'

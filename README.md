@@ -70,6 +70,7 @@ This repository also includes some handy bash functions, like:
 
 - [MKPR](#mkpr)
 - [MKPY](#mkpy)
+- [MKFL](#mkfl)
 
 
 #### MKPR
@@ -105,6 +106,25 @@ the function will:
 
 ##### Important: this creates a Python2 venv. If you want to use Python3 instead, just use mkpy3 :)
 
+#### MKFL
+
+This function will create a Flask App.
+
+For Example, with:
+
+```bash
+mkfl projectName
+```
+
+the function will:
+- create a directory called "projectName"
+- create a Git repository in it
+- create a Python Environment in it
+- activate the Environment
+- install flask and add it to "requirements.txt"
+- create the "src" folder with inside "`run.py`"
+- create the "application" folder with inside "`__init__.py`" and "`routes.py`"
+
 ### MOTD
 
 A **motd** (**m**essage **o**f **t**he **d**ay) is a message displayed everytime you log on a terminal.
@@ -121,4 +141,4 @@ You can Pull Request me everytime you want, I'll check your sumbissions as soon 
 ## TODOs
 - [ ] **MKND**: Bash Function - Create a NodeJS project
 - [ ] **MKDK**: Bash Function - Create a project with a Dockerfile / docker-compose file
-- [ ] **MKFL**: Bash Function - Create a Flask App
+- [X] **MKFL**: Bash Function - Create a Flask App
